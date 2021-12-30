@@ -115,7 +115,7 @@ function DiscordLib:Window(text)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(20, 107, 58)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -402,7 +402,7 @@ function DiscordLib:Window(text)
 
 	SettingsFrame.Name = "SettingsFrame"
 	SettingsFrame.Parent = MainFrame
-	SettingsFrame.BackgroundColor3 = Color3.fromRGB(22, 91, 51)
+	SettingsFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 	SettingsFrame.BackgroundTransparency = 1.000
 	SettingsFrame.Size = UDim2.new(0, 681, 0, 396)
 	SettingsFrame.Visible = false
