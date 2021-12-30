@@ -111,20 +111,11 @@ function DiscordLib:Window(text)
 	local ServersHoldLayout = Instance.new("UIListLayout")
 	local ServersHoldPadding = Instance.new("UIPadding")
 	local TopFrameHolder = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
-
---Properties:
-
-ImageLabel.Parent = MainFrame
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Position = UDim2.new(0.345080674, 0, -0.00176524185, 0)
-ImageLabel.Size = UDim2.new(0, 116, 0, 103)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=8405828667"
 
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(187, 37, 40)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(20, 107, 58)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
