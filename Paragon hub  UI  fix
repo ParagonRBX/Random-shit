@@ -1,0 +1,838 @@
+
+
+
+---[Settings]-----
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/ParagonRBX/Random-shit/main/Idk")()
+
+local win = DiscordLib:Window("Paragon (Alpha)")
+
+
+local serv = win:Server("Squid Game", "http://www.roblox.com/asset/?id=7662292332")
+
+
+
+
+DiscordLib:Notification("PARAGON NOTICE", "HAPPY NEW YEAR FROM PARAGON! LET'S BRING ON 2022 WITH A BANG!!!", "Thanks")
+
+local lp = game:GetService('Players').LocalPlayer
+local topkek = {}
+topkek.libutil = {}
+
+local players = {game:GetService("Players")}
+
+function playerlist(plr)
+	if Playelist == true then 
+	 	for _,value in ipairs(leaderstats:GetChildren()) do
+		entry[value.Name].Text = value.Value
+		value:GetPropertyChangedSignal("Value"):Connect(function()
+        	entry[value.Name].Text = value.Value
+		end)
+	end
+	 
+	
+	end
+end
+function ChooseOption(COP)
+	if ChooseOption == true then 
+	local A_1 = COP
+	local B_2 = lol 
+	local B_3 = lol 
+game:GetService("ReplicatedStorage").Remotes.Voting.Vote:InvokeServer(A_1)
+	
+end
+	end
+
+function choosevote(vote)
+	if choosevote == true then 
+	local A_1 = vote
+game:GetService("ReplicatedStorage").Remotes.Voting.Vote:InvokeServer(A_1)
+	
+end
+	end
+
+
+getgenv().AdminSettings = {
+Owner = false;
+
+
+
+}
+
+
+
+
+
+
+
+if getgenv().AdminSettings.Owner == true then
+	
+
+	local serv3 = win:Server("Admin Panel", "")
+	DiscordLib:Notification("Notification",  "Welcome Owner!", "Okay!")
+	
+	local btns3 = serv3:Channel("Admin Coding stuff")
+btns3:Button("Coordinates GUI", function()
+   loadstring(game:HttpGet(("https://pastebin.pl/view/raw/9f62bd15"), true))()
+end)
+btns3:Button("TopK3k 4.0", function()
+	loadstring(game:HttpGet"https://ghostbin.com/KGZu8/raw")()
+
+    end)
+    
+    
+
+
+
+
+btns3:Textbox("Admin Messenger", "Type here!", true, function(t)
+	local A_1 = t
+local A_2 = "All"
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(A_1, A_2)
+
+end)
+    
+
+
+
+
+	
+	
+	
+	else 
+	
+	
+
+end
+
+
+
+print("---Admin Settings----")
+for i,v in pairs(getgenv().AdminSettings) do 
+	print(i,v) 
+end 
+print("ONLY FOR ADMIN USE")
+
+
+getgenv().settingsTable = {
+Godmode = false;
+Brightness = true;
+Kill_PLR = false;
+
+}
+
+
+getgenv().FullRelease = {
+
+Released = false;
+
+
+}
+
+
+if getgenv().FullRelease.Released == true then 
+	local serv2 = win:Server("MM2", "http://www.roblox.com/asset/?id=7312015706")
+--Murder Mystery 2---
+
+local btns1 = serv2:Channel("LocalPlayer");
+local btns2 = serv2:Channel("Teleports");
+local btns3 = serv2:Channel("Farming");
+
+
+btns3:Button("Auto-Farm", true, function(bool) 
+	  while true do
+wait(0.5)
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+    for _, child in pairs(child:GetChildren()) do
+        table.insert(children, child)
+    end
+
+    if child:IsA("BasePart") and child.Name == "Coin_Server" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame
+            wait(2.9)
+            
+    elseif  child:IsA("BasePart") and child.Name == "CollectedCoin = 30" then
+            game.Players.LocalPlayer.Character.Head:Remove()
+            end
+        end
+    end
+
+	
+	
+end)
+
+btns1:Button("Godmode", true, function(bool) 
+	
+	
+end)
+
+btns1:Button("NoClip", true, function(bool)
+	
+end)
+
+btns1:Button("Fly", true, function(bool)
+	
+end)
+local sldr = btns1:Slider("JumpPower(Min 15 | Max 100", 15, 100, 15, function(t)
+	local wlsl = true
+
+if wlsl == true then
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+	
+end
+end)
+local sldr = btns1:Slider("Walkspeed(Min 15 | Max 100", 15, 100, 15, function(t)
+	local wlsl = true
+
+if wlsl == true then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+	
+end
+end)
+local drop2 = btns1:Dropdown("Choose your weapons",{"--Knifes--","Snowflake","Icewing","Frostsaber","WintersEdge","TheSeer","JigSaw","Fade","Nether","Saw","GreenFire","RedFire","","---Guns---","Predator"}, function(bool)
+choosevote = bool 
+local A_1 = bool
+local A_2 = "Weapons";
+game:GetService("ReplicatedStorage").Equip:FireServer(A_1, A_2)
+
+game:GetService("ReplicatedStorage").Remotes.Voting.Vote:InvokeServer(A_1)
+
+if selectedvote then 
+ chooseselected(choosevote)
+ game:GetService("Workspace").Game1.Good:Play()
+ 
+end
+
+end)
+else 
+print("Not full game Just yet please wait for the MM2 release :)")
+end
+
+for i,v in pairs(getgenv().AdminSettings) do 
+	
+end 
+
+
+
+
+
+
+print("---DEFAULT SETTINGS---")
+for i,v in pairs(getgenv().settingsTable) do 
+	print(i,v) 
+end 
+print("-------")
+
+
+
+
+
+
+--- Squid game-----
+local btns = serv:Channel("Instant Finish")
+
+
+
+btns:Button("Red Light Green Light", function()
+
+	wait(1.5)
+tp(-120.22964477539, 7.0776896476746, -295.12069702148)
+wait(2)
+		tp(-153.89, 6.1, -641.05)
+DiscordLib:Notification("Notification", "Successfully Teleported!", "Okay!")
+end)
+btns:Label("Make sure that you press this after you move");
+
+
+btns:Button("Night fight Safe place ", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.6197662353516, 57.657905578613, -190.16757202148)
+   DiscordLib:Notification("Notification", "Successfully Teleported!", "Okay!")
+    end)
+    
+    
+    
+        btns:Button("Guard safe place", function()
+    	tp(-31.579803466797, -100.85199737549, -344.3176574707)
+   DiscordLib:Notification("Notification", "Successfully Teleported!", "Okay!")
+    	
+	end) 
+	
+
+btns:Seperator("Auto Finish")
+
+local remotepath = game:GetService("ReplicatedStorage").Remotes
+
+btns:Button("Honeycomb", function(Cookie)
+    hum = game:GetService("Players").LocalPlayer.Character.Humanoid
+newhum.Parent = game:GetService("Players").LocalPlayer.Character
+
+local A_1 = true
+local A_2 = game.Players.LocalPlayer()
+	 
+game:GetService("ReplicatedStorage").Remotes.SugarHoneycomb:FireServer(A_1)
+
+wait(1.5)
+game:GetService("ReplicatedStorage").Assets.Cookies:Destroy()
+wait(0.5)
+
+tp(-9.6197662353516, 57.657905578613, -190.16757202148)
+DiscordLib:Notification("Notification", "Wow look at that finished cookie?!", "Okay!")
+end)
+
+
+
+
+btns:Button("Glass Tiles", function()
+	wait()
+		tp(-337.88128662109, -125.72707366943, -197.56170654297)
+DiscordLib:Notification("Notification", "Wow you're really good at this", "Okay!")
+end)
+
+
+
+btns:Button("Squid Game", function(value)
+	local killing = false
+local UIS = game:GetService("UserInputService")
+
+local FriendList = {
+    "lol",
+}
+
+UIS.InputBegan:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.Q  then
+killing = true
+    while killing do
+    wait()
+    for i,v in pairs(game.Players:GetChildren()) do
+        if v.Name ~= game.Players.LocalPlayer.Name and not table.find(FriendList, v.Name) and v.Character and v.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local EnemyHRP = v.Character.HumanoidRootPart
+                game:GetService("ReplicatedStorage").Remotes.Replication:FireServer(v.Character.Humanoid, 10)
+            end
+        end
+    end
+end
+end)
+
+
+UIS.InputEnded:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.Q  then
+killing = false
+end
+end)
+game:GetService("Workspace").Game1.Good:Play()
+
+DiscordLib:Notification("Notification", "Press Q", "Okay!")
+end)
+
+
+btns:Button("Tag ontop map", function()
+	tp(-36.91, -118.65, 838.35)
+DiscordLib:Notification("Notification", "Cheater!?", "Okay!")
+game:GetService("Workspace").Game1.Good:Play()
+end)
+
+
+
+btns:Toggle("Auto Tug of war(Alpha)",false, function(Value)
+	local tug = Value 
+
+tug = Value 
+	
+if tug == true then 	
+	for i = 1,10 do
+game:GetService("ReplicatedStorage").TugRemote:FireServer()
+wait(0.3)
+game:GetService("ReplicatedStorage").TugRemote:FireServer()
+wait(0.3)
+game:GetService("ReplicatedStorage").TugRemote:FireServer()
+wait(0.3)
+game.Players.LocalPlayer.Character.Humanoid.Walkspeed = 50;
+
+	end 
+
+
+		
+end
+end)
+
+
+
+
+btns:Label("Note: these only work once you're in the actual game!!")
+btns:Label("More coming soon!!")
+
+
+
+
+
+local tgls = serv:Channel("Misc")
+
+local choosevote;
+local drop = tgls:Dropdown("New Vote",{"Classic","Random","Endless"}, function(bool)
+choosevote = bool 
+local A_1 = bool
+game:GetService("ReplicatedStorage").Remotes.Voting.Vote:InvokeServer(A_1)
+
+if selectedvote then 
+ chooseselected(choosevote)
+ game:GetService("Workspace").Game1.Good:Play()
+ 
+end	
+
+end)
+	
+	
+
+
+tgls:Toggle("Brightness",true, function(bool)
+    local Toggle = bool  --- False is off; true is on 
+    
+    
+     if Toggle == true  then 
+DiscordLib:Notification("Notification", "Full Bright Loaded!!!","Okay");
+loadstring(game:HttpGet("https://pastebin.com/raw/n7H7uczY", true))();
+
+elseif Toggle == false then 
+    DiscordLib:Notification("Notification", "Full Bright Unloaded!!!","Okay");
+loadstring(game:HttpGet("https://pastebin.com/raw/X3wJJQvi", true))();
+    end
+end)
+
+
+tgls:Button("Teleporter", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-26.47, 3.1, -107.28)
+DiscordLib:Notification("Notification", "Haha Lazy I see", "Yeah haha")
+game:GetService("Workspace").Game1.Good:Play()
+end)
+
+
+
+
+
+
+local sldrs = serv:Channel("Player")
+
+
+
+
+
+
+
+
+local sldr2 = sldrs:Toggle("Anchor",true, function(Value)
+     local Player = game.Players.LocalPlayer
+
+local Char = Player.Character or Player.CharacterAdded:Wait()
+Char.Archivable = true
+Char:WaitForChild("HumanoidRootPart").Anchored = Value
+    end)
+    
+    
+     
+ sldrs:Toggle("Godmode",true, function(Value)
+ godmode = Value;
+	if godmode == true then 
+	
+	hum = game:GetService("Players").LocalPlayer.Character.Humanoid
+hum.Parent = humstore
+newhum = hum:Clone()
+newhum.Parent = game:GetService("Players").LocalPlayer.Character
+godded = true
+else
+newhum:Destroy()
+hum.Parent = game:GetService("Players").LocalPlayer.Character
+
+
+end
+ 
+    end)
+       
+       
+      
+
+
+sldrs:Button("InfJump", true,function(Mob)
+       Jump = Mob 
+       		if Jump == true then 
+       		    
+       	DiscordLib:Notification("Notification", "Inf Jump has loaded","Okay");
+       	wait(2)
+      DiscordLibNotification("PARAGON NOTICE", "InfJump Cannot be turned off","Ok");
+       		    local thrust = Instance.new("BodyVelocity")
+
+	game:GetService('UserInputService').InputBegan:connect(function(i, b)
+
+		if i.KeyCode == Enum.KeyCode.Space then
+
+			
+
+			coroutine.resume(coroutine.create(function()
+
+				thrust.Parent = game.Players.LocalPlayer.Character.PrimaryPart
+
+				thrust.velocity = Vector3.new(0,50,0)
+
+				thrust.maxForce = Vector3.new(0,4e+050,0)
+
+				wait(0.2)
+
+				thrust.Parent = nil 
+
+			end))
+
+		end
+
+	end)
+	
+       		    
+       		    else
+       		
+       		  
+       		   
+       		        
+       		        end 
+	
+end)
+
+
+
+local sldr = sldrs:Slider("Walkspeed(Min 15 | Max 100", 15, 100, 15, function(t)
+local wlsl = true
+
+if wlsl == true then
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+	
+end
+end)
+
+
+
+sldrs:Button("Reset", function()
+sldr:Change(0)
+
+end)
+
+
+
+
+
+
+local drops = serv:Channel("World")
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+drops:Toggle("Shoot All", function(Value)
+	_G.Spam = Value
+if _G.Spam == true then do wait()
+    
+	
+		for i,v in pairs(game.Players:GetChildren()) do 
+	
+local A_1 = v.Character.Head.Position
+game:GetService("ReplicatedStorage").Remotes.GunShoot:FireServer(A_1)
+end
+end
+end
+end) 
+drops:Button("Kill All (Q)", function(Value)
+	local killing = false
+local UIS = game:GetService("UserInputService")
+
+local FriendList = {
+    "lol",
+}
+
+UIS.InputBegan:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.Q  then
+killing = true
+    while killing do
+    wait()
+    for i,v in pairs(game.Players:GetChildren()) do
+        if v.Name ~= game.Players.LocalPlayer.Name and not table.find(FriendList, v.Name) and v.Character and v.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local EnemyHRP = v.Character.HumanoidRootPart
+                game:GetService("ReplicatedStorage").Remotes.Replication:FireServer(v.Character.Humanoid, 10)
+            end
+        end
+    end
+end
+end)
+
+
+UIS.InputEnded:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.Q  then
+killing = false
+end
+end)
+game:GetService("Workspace").Game1.Good:Play()
+
+DiscordLib:Notification("Notification", "Press Q", "Okay!")
+end)
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+local bnds = serv:Channel("KeyBinds")
+
+
+bnds:Bind("Tug of war", Enum.KeyCode.L, function(t)
+game:GetService("ReplicatedStorage").TugRemote:FireServer(Value)
+game:GetService("Workspace").Game1.Good:Play()
+end)
+
+
+bnds:Bind("50% Walkspeed", Enum.KeyCode.RightShift, function(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 30
+end)
+
+bnds:Bind("Kill All (R)", Enum.KeyCode.R, function(t)
+local killing = false
+local UIS = game:GetService("UserInputService")
+
+local FriendList = {
+    "lol",
+}
+
+UIS.InputBegan:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.R then
+killing = true
+    while killing do
+    wait()
+    for i,v in pairs(game.Players:GetChildren()) do
+        if v.Name ~= game.Players.LocalPlayer.Name and not table.find(FriendList, v.Name) and v.Character and v.Character:FindFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local EnemyHRP = v.Character.HumanoidRootPart
+                game:GetService("ReplicatedStorage").Remotes.Replication:FireServer(v.Character.Humanoid, 10)
+            end
+        end
+    end
+end
+end)
+
+
+UIS.InputEnded:Connect(function(input, chat)
+if input.KeyCode == Enum.KeyCode.R  then
+killing = false
+end
+end)
+game:GetService("Workspace").Game1.Good:Play()
+
+DiscordLib:Notification("Notification", "Press R", "Okay!")
+end)
+	
+	
+
+	
+	
+
+
+
+getgenv().NormalSettings = {
+
+FullRelease = true;
+
+}
+
+
+
+
+
+
+	
+	local serv4 = win:Server("Help & Change-Logs", "http://www.roblox.com/asset/?id=6031075938")
+
+
+
+
+local btns1 = serv4:Channel("29/12/2021")
+
+
+btns1:Label("+Updated to the latest game update")
+btns1:Label("+Fixes for minor bugs")
+btns1:Label("+Diagnosed errors and fixed them ready for release")
+
+local Update1 = serv4:Channel("31/12/2021")
+
+
+Update1:Label("Squid Game Patch Notes:")
+Update1:Label("[+] Improved Auto tug of war")
+Update1:Label("[+] Added Keybind for tug of war")
+Update1:Label("[+] Improved red light greenlight waiting time")
+Update1:Label("    from 3 seconds to 1.5 seconds")
+Update1:Label("[+] Improved Red light green light auto finish")
+Update1:Label("[+] Added a godmode feature")
+Update1:Label("[*] Tweeked most of the options")
+Update1:Label("[+] Improved teleport to make it less risky of getting shot")
+Update1:Label("[-] Revamped Shoot all: It should now work")
+	Update1:Label("[-] Removed the wait time for the Glass tiles teleport")
+	Update1:Label("[?] InfJump cannot be turned off We've tried everything")
+	
+
+
+
+
+
+    local btns1 = serv4:Channel("Discord")
+    
+    
+    btns1:Label("https://discord.gg/W9cUdwaS3U")
+    
+    local btns1 = serv4:Channel("Credits")
+    
+    btns1:Label("Main Developer/Scripter: EclipseCentralYT#8262")
+	
+function tp(x,y,z)
+local valtomove = 4
+moving = true
+anchored = false
+noclip = true 
+godmode = true
+spawn(function()
+if x < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X then
+while x < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X-valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+end)
+spawn(function()
+if z < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z then
+while z < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z-valtomove))
+end
+end
+end)
+spawn(function()
+if x > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X then
+while x > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X+valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+end)
+if anchored == true then
+game.Players.LocalPlayer.Character.Head.Anchored = true
+end
+
+if godmode == true then 
+	
+	hum = game:GetService("Players").LocalPlayer.Character.Humanoid
+hum.Parent = humstore
+newhum = hum:Clone()
+newhum.Parent = game:GetService("Players").LocalPlayer.Character
+godded = true
+else
+newhum:Destroy()
+hum.Parent = game:GetService("Players").LocalPlayer.Character
+
+godded = false
+end
+end
+
+if noclip == true then
+--[[
+	Made by PresidentIvan!
+--]]
+
+
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local runservice = game:GetService("RunService")
+local noclip = false
+
+runservice.Stepped:Connect(function()
+    if noclip then
+        player.Character.Humanoid:ChangeState(11)
+    end
+end)
+
+mouse.KeyDown:Connect(function(key)
+    if key == "t" then
+        msg:Destroy()
+    end
+end)
+
+mouse.KeyDown:Connect(function(key)
+    if key == "e" then
+	    noclip = true
+	    player.Character.Humanoid:ChangeState(11)
+    end
+end)
+end
+if z > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z then
+while z > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z+valtomove))
+end
+end
+spawn(function()
+if y < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y then
+while y < game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y-valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+end)
+spawn(function()
+if y > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y then
+while y > game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y do
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y+valtomove,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z))
+end
+end
+end)
+moving = false
+game:getService("RunService"):BindToRenderStep("",0,function()
+if moving == true then
+game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
+end
+end)
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+godded = false
+hum = nil
+newhum = nil
+OnOff.Text = "OFF"
+for i,v in pairs(humstore:GetChildren())do
+v:Destroy()
+end
+end)
+
+
+
+
